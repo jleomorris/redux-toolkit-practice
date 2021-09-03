@@ -20,7 +20,7 @@ const RandomQuote: React.FC = () => {
           {pending && <p>Loading...</p>}
           {data && (
             <h2 className='text-8xl m-auto text-white w-9/12 text-center'>
-              "{data.quote}"
+              {`"${data.quote}"`}
             </h2>
           )}
           {error && <p>Oops, something went wrong</p>}
